@@ -22,6 +22,6 @@ buffer.forEach(element => {
     sum += element;
 });
 let carry = sum.toString(16).slice(0, -4);
-sum = parseInt(sum.toString(16).slice(-4, sum.toString(16).length), 16);
+sum = parseInt(sum.toString(16).slice(-4), 16);
 sum += parseInt(carry);
 console.log("文件的校验和为：" + sum.toString(16));
