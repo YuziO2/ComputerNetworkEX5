@@ -5,7 +5,7 @@ var data = fs.readFileSync('./infile').toString();
 console.log("文件的内容为：" + data);
 
 if (data.length % 2) {//长度为奇数
-    data.push(0);//补一个0
+    data += 0;//补一个0
 }
 let temp = "";
 let buffer = [];
